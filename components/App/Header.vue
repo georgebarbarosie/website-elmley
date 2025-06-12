@@ -1,9 +1,5 @@
 <!-- sticky header with 3-item navigation, responsive, collapsible -->
 <script setup lang="ts">
-import { AppLogo, FontAwesome } from '#components';
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
-
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
