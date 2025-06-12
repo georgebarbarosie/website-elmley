@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+    --font-sans: 'Inter', sans-serif;
+    /* --font-sans: 'Open Sans', sans-serif; */
+    --font-serif: 'Merriweather', serif;
+    /* --font-serif: 'Roboto Slab', serif; */
+    --font-mono: 'Fira Code', monospace;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --color-primary: #27403c;
+    --color-secondary: color-mix(in srgb, var(--color-primary) 80%, black 20%);
+    --color-accent: color-mix(in srgb, var(--color-primary) 70%, white 30%);
+    --color-background: #f7fafc; /* Light Gray */
+    --color-background-dark: var(--color-secondary); /* Dark Background */
+    --color-text: #2d3748; /* Dark Text */
+    --color-text-dark: #edf2f7; /* Light Text */
+    --color-text-secondary: #718096; /* Secondary Text */
+    --color-border: #cbd5e0; /* Light Border */
+    --color-link: #3182ce; /* Blue Link */
+    --color-link-hover: #2b6cb0; /* Darker Blue Link */
+    --color-success: #38a169; /* Green */
+    --color-warning: #dd6b20; /* Orange */
+    --color-error: #e53e3e; /* Red */
+    --color-info: #3182ce; /* Blue */
+    --color-shadow: black/7; /* Light Shadow */
+    --color-shadow-dark: rgba(0, 0, 0, 0.8); /* Dark Shadow */
+    --color-gradient-start: #00000000;
+    --color-gradient-end: rgba(0, 0, 0, calc(1/7)); /* Gradient End */
+    --color-gradient-dark-start: #00000000;
+    --color-gradient-dark-end: rgba(255, 255, 255, calc(1/7)); /* Dark Gradient End */
+    --color-border-radius: 0.375rem; /* Border Radius */
+    --color-transition: all 0.3s ease-in-out; /* Transition */
+    --color-shadow-light: rgba(255, 255, 255, 0.1); /* Light Shadow */
+    --color-shadow-dark-light: rgba(255, 255, 255, 0.2); /* Dark Shadow */
+}
+
+@layer base {
+    body {
+        @apply bg-(--color-background) text-(--color-text);
+        @apply dark:bg-(--color-background-dark) dark:text-(--color-text-dark);
+    }
+    
+    body div.flex header {
+        @apply bg-(--color-background) dark:bg-(--color-background-dark);
+        @apply text-(--color-accent) dark:text-(--color-background);
+        @apply shadow-md fixed w-full z-10 h-16;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold;
+        @apply mb-2;
+    }
+    
+    p {
+        @apply mb-2 last:mb-0;
+        @apply font-serif
+    }
+
+    .card {
+        @apply p-4 m-4;
+        @apply rounded-lg;
+        @apply  from-gradient-start to-gradient-end
+                dark:from-gradient-dark-start dark:to-gradient-dark-end;
+
+        /* @apply bg-(--color-background) border-(--color-border) rounded-(--color-border-radius) shadow-(--color-shadow);
+        @apply dark:bg-(--color-background-dark) dark:shadow-(--color-shadow-dark); */
+
+        @apply bg-gradient-to-r;
+        /* from-transparent to-black/7;
+        @apply dark:bg-gradient-to-r dark:from-transparent dark:to-white/7; */
+        
+        @apply transition-(--color-transition);
+        @apply hover:shadow-(--color-shadow-dark);
+    }
+}
