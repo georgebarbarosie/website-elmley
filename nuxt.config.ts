@@ -32,4 +32,12 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+
+  ssr: true,
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false
+    }
+  }
 })
