@@ -57,7 +57,8 @@
     
     p {
         @apply mb-2 last:mb-0;
-        @apply font-serif
+        @apply font-serif;
+        @apply text-justify;
     }
 
     .card {
