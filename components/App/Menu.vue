@@ -21,7 +21,7 @@ export default {
         return {
             links: [
                 { label: 'Home', to: '/' },
-                { label: 'About', to: '/about' },
+                { label: 'Services', to: '/services' },
                 { label: 'Land Acquisition', to: '/acquisition' },
                 { label: 'Contact', to: '/contact' },
             ],

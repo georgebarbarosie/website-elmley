@@ -23,41 +23,45 @@
         </div>
     </div>
 
-    <div class="card">
-        <h1>Our Mission</h1>
-        <p>
-            At Elmley Homes, our mission is to become your trusted partner in land and home development,
-            to deliver exceptional, design-led homes that are both architecturally considered and contextually appropriate. We are committed to creating places that respect their setting, respond to the needs of modern living, and contribute meaningfully to the fabric of the community.
-            Our developments are carefully curated—each project shaped by a deep understanding of land, planning, and place. We prioritise quality over scale, focusing on building homes of enduring value with a meticulous, end-to-end approach.
+    <div class="card card-main">
+        <h1>Your Trusted Partner in Land Development</h1>
+        <p class="hyphens-auto" lang="en">
+            At Elmley Homes, our mission is to craft exceptional, design-led homes that are both architecturally refined and sensitive to their context. 
+            We are dedicated to creating places that honour their surroundings, meet the needs of contemporary living, and enrich the character of the
+            communities they belong to.
         </p>
     </div>
 
     <div class="card">
-        <h1>A Trusted Partner in Land and Home Development</h1>
+        <h1>About Us</h1>
+        <p class="hyphens-auto" lang="en">
+            At Elmley Homes, we bring your dream home to life by crafting beautifully considered homes that reflect your aspirations and fit seamlessly
+            within the most desirable settings across
+                <strong>The Cotswolds</strong>,
+                <strong>Stratford-Upon-Avon</strong>,
+                <strong>Warwickshire</strong> and
+                <strong>Cambridgeshire</strong>.
+        </p>
 
-        <h2>Honest, Transparent, Professional</h2>
-        <div class="flex items-start">
-            <img src="~/assets/images/luxurious-modern-1.png" alt="Luxurious Modern Home" class="w-1/3 mr-4">
-            <p>
-            We know exploring development can be daunting. That's why Elmley Homes brings openness, reliability, and deep industry experience to every conversation.
-            Our team is here to guide you through the process, ensuring you feel informed and confident at every step.
-            We pride ourselves on our integrity and professionalism, making sure you always know where you stand.
-            With Elmley Homes, you can trust that your interests are our top priority.
-            </p>
-        </div>
+        <p class="hyphens-auto" lang="en">
+            Every development is thoughtfully curated and guided by a deep understanding of 
+            <strong>land</strong>, 
+            <strong>planning policy</strong>, and 
+            <strong>local identity</strong>.
+            We place quality
+            above quantity, delivering homes of enduring value through a meticulous, end-to-end approach that combines vision, expertise, and care at every stage.
+        </p>
+        
+        <p class="hyphens-auto" lang="en">
+            As a premium housebuilder, we combine 
+            <strong>traditional architecture</strong> and <strong>authentic detailing</strong> with modern layouts and the latest in <strong>technology and sustainability</strong>. 
+            The result is a harmonious blend of timeless style and contemporary comfort.
+        </p>
 
-        <h2>Complete, End-to-End Expertise</h2>
-        <p>Our team covers every stage—land potential analysis, planning, construction, and sale—to ensure a smooth and successful process.</p>
-
-        <h2>Focused on Single Homes with Generous Gardens</h2>
-        <p>We specialise in creating high-quality single homes with reasonable garden space that blend seamlessly with the local area.</p>
-
-        <h2>Supportive at Every Step</h2>
-        <p>Whether you're ready to sell or just exploring possibilities, we offer a hands-on, no-pressure approach tailored to your needs.</p>
-
-        <h2>Get in Touch—Let's Explore the Potential</h2>
-        <p>We're actively looking for land and would love to hear from you. Contact us today to find out how we can work together.</p>
-
+        <p class="hyphens-auto" lang="en">
+            We believe in delivering <strong>affordable luxury</strong>&mdash;homes with elevated specifications, meticulous craftsmanship, and a commitment to quality that distinguishes 
+            every Elmley Homes project. With a hands-on, end-to-end approach, we prioritise lasting value over volume, and integrity in everything we do.
+        </p>
     </div>
 </template>
 <script setup lang="ts">
@@ -72,10 +76,10 @@ const carouselConfig = {
 }
 
 useHead({
-    title: 'Elmley Homes - Your Trusted Real Estate Partner',
+    title: 'Elmley Homes - Your Trusted Partner in Land Development',
     meta: [
-        { name: 'description', content: 'Discover Elmley Homes, your trusted partner in real estate. Explore our listings and find your dream home today.' },
-        { name: 'keywords', content: 'Elmley Homes, real estate, housing, property listings' }
+        { name: 'description', content: 'Elmley Homes is dedicated to crafting exceptional, design-led homes that are architecturally refined and sensitive to their context. We create places that honour their surroundings and enrich the character of the communities they belong to.' },
+        { name: 'keywords', content: 'Elmley Homes, land development, design-led homes, Cotswolds, Stratford-Upon-Avon, Warwickshire, Cambridgeshire, premium housebuilder, traditional architecture, affordable luxury' }
     ]
 });
 </script>
