@@ -77,4 +77,8 @@
         @apply transition-(--color-transition);
         @apply hover:shadow-(--color-shadow-dark);
     }
+
+    .card h1 {
+        @apply text-xl font-bold mb-4;
+    }
 }

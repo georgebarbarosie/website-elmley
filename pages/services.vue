@@ -1,6 +1,9 @@
 <template>
     <div class="card">
-        <h1>Land</h1>
+        
+        <h1>
+            <FontAwesome :icon="faHandsHoldingCircle" class="inline-block mr-2" />
+            Land</h1>
         <p class="hyphens-auto" lang="en">
             We actively seek land with development potential—ranging from spacious gardens to unused plots and underutilised sites.
             Typically, we acquire land through option agreements, allowing us to assess and unlock its full value in a structured,
@@ -10,7 +13,9 @@
     </div>
 
     <div class="card">
-        <h1>Bespoke Design</h1>
+        <h1>
+            <FontAwesome :icon="faCompassDrafting" class="h-6 w-6 inline-block mr-2" />
+            Bespoke Design</h1>
         <p class="hyphens-auto" lang="en">
             Every site deserves a design solution that responds to its unique context. We focus on 
             bespoke residential design that balances character, quality, and market demand&mdash;often blending
@@ -20,7 +25,9 @@
     </div>
 
     <div class="card">
-        <h1>Planning Permission</h1>
+        <h1>
+            <FontAwesome :icon="faWandMagicSparkles" class="h-6 w-6 inline-block mr-2" />
+            Planning Permission</h1>
         <p class="hyphens-auto" lang="en">
             We specialise in securing well-considered planning permissions that enhance the value and potential of each site.
             Through close collaboration with a trusted network of consultants, we manage the entire process&mdash;from early feasibility
@@ -31,6 +38,7 @@
 </template>
 <!-- set page title -->
 <script setup lang="ts">
+import { faCompassDrafting, faHandsHoldingCircle, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
 useHead({
     title: 'Elmley Homes - Our Services',
     meta: [
