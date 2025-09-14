@@ -1,10 +1,30 @@
 <template>
-    <h1>Contact</h1>
+    <div class="flex">
+        <Carousel class="flex-1" v-bind="carouselConfig">
+            <Slide>
+                <img src="~/assets/images/contact-desk.png">
+            </Slide>
+        </Carousel>
+    </div>
 
-    <h2>Chapter 1</h2>
-    <h2>Chapter 2</h2>
+
+    <div class="card">
+        <p class="hyphens-auto" lang="en">
+            Email: <a href="mailto:office@elmleyhomes.co.uk">office@elmleyhomes.co.uk</a>
+        </p>
+
+        <p class="hyphens-auto" lang="en">
+            Phone: <a href="tel:+44 774599099">+44 7745 99099</a>
+        </p>
+    </div>
 </template>
 <script setup lang="ts">
+import { Carousel, Slide, Navigation, Pagination} from 'vue3-carousel';
+
+const carouselConfig = {
+  height: '40em'
+}
+
 useHead({
     title: 'Contact Us - Elmley Homes',
     meta: [

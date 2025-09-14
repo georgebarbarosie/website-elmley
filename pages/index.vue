@@ -2,10 +2,14 @@
     <div class="flex">
         <Carousel class="flex-1" v-bind="carouselConfig">
             <Slide>
-                <img src="~/assets/images/bungalow-1.png">
+                <img src="~/assets/images/index-carousel-1-bungalow.png">
             </Slide>
             <Slide>
-                <img src="~/assets/images/rose-street-1.png">
+                <img src="~/assets/images/index-carousel-2-interior-light.png">
+            </Slide>
+
+            <Slide>
+                <img src="~/assets/images/index-carousel-3-living.png">
             </Slide>
 
             <template #addons>
@@ -26,47 +30,43 @@
     <div class="card card-main">
         <h1>Your Trusted Partner in Land Development</h1>
         <p class="hyphens-auto" lang="en">
-            At Elmley Homes, our mission is to craft exceptional, design-led homes that are both architecturally refined and sensitive to their context. 
-            We are dedicated to creating places that honour their surroundings, meet the needs of contemporary living, and enrich the character of the
-            communities they belong to.
+            At Elmley Homes, our mission is to create exceptional, design-led homes that are both architecturally refined and sensitive to their surroundings. 
+            We are dedicated to creating homes that meet the needs of contemporary living, and enrich the character of the communities to which they belong.
         </p>
     </div>
 
-    <div class="card">
+    <div class="card hyphens-auto" lang="en">
         <h1>About Us</h1>
-        <p class="hyphens-auto" lang="en">
-            At Elmley Homes, we bring your dream home to life by crafting beautifully considered homes that reflect your aspirations and fit seamlessly
-            within the most desirable settings across
-                <strong>The Cotswolds</strong>,
-                <strong>Stratford-Upon-Avon</strong>,
-                <strong>Warwickshire</strong> and
-                <strong>Cambridgeshire</strong>.
+        <p>
+            We are a property developer who specialises in providing bespoke luxury homes.
         </p>
 
-        <p class="hyphens-auto" lang="en">
-            Every development is thoughtfully curated and guided by a deep understanding of 
-            <strong>land</strong>, 
-            <strong>planning policy</strong>, and 
-            <strong>local identity</strong>.
-            We place quality
-            above quantity, delivering homes of enduring value through a meticulous, end-to-end approach that combines vision, expertise, and care at every stage.
-        </p>
-        
-        <p class="hyphens-auto" lang="en">
-            As a premium housebuilder, we combine 
-            <strong>traditional architecture</strong> and <strong>authentic detailing</strong> with modern layouts and the latest in <strong>technology and sustainability</strong>. 
-            The result is a harmonious blend of timeless style and contemporary comfort.
+        <p>
+            At the heart of our approach is the careful selection of exclusive plots, often nestled
+            within areas of outstanding natural beauty within the most desirable settings across 
+            <strong>The Cotswolds, Stratford-Upon-Avon, Warwickshire, Oxfordshire and Cambridgeshire</strong>.
         </p>
 
-        <p class="hyphens-auto" lang="en">
-            We believe in delivering <strong>affordable luxury</strong>&mdash;homes with elevated specifications, meticulous craftsmanship, and a commitment to quality that distinguishes 
-            every Elmley Homes project. With a hands-on, end-to-end approach, we prioritise lasting value over volume, and integrity in everything we do.
+        <p>
+            We believe that exceptional homes begin with exceptional locations.
+        </p>
+
+        <p>
+            Each site we acquire is chosen not just for its setting, but for the potential to create something
+            truly unique. Our designs are guided by a deep understanding of land, planning policy,
+            local identity. We are always considerate of the surrounding environment, enhancing the local
+            character through architecture that is both timeless and contemporary.
+        </p>
+
+        <p>
+            Every home we build is individually designed, ensuring that each development is as
+            distinctive as the land it stands on. Our commitment is to craft homes that are elegant,
+            functional, and in harmony with their surroundings.
         </p>
     </div>
 </template>
 <script setup lang="ts">
 import { Carousel, Slide, Navigation, Pagination} from 'vue3-carousel';
-// import bungalowImage1 from '~/assets/images/bungalow-1.png';
 
 const carouselConfig = {
   height: '40em',
@@ -84,17 +84,5 @@ useHead({
 });
 </script>
 <style>
-.carousel {
-  --vc-pgn-background-color: rgba(255, 255, 255, 0.7);
-  --vc-pgn-active-color: rgba(255, 255, 255, 1);
-  --vc-nav-background: rgba(255, 255, 255, 0.7);
-  --vc-nav-border-radius: 100%;
-}
 
-.carousel img {
-  border-radius: 8px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 </style>
