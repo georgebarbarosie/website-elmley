@@ -4,9 +4,12 @@
 
 
 @theme {
-    --font-sans: 'Inter', sans-serif;
+    /* --font-sans: "Proxima N W01 Reg", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    --font-sans: "Nunito Sans", Arial, sans-serif;
+    /* --font-sans: 'Inter', sans-serif; */
     /* --font-sans: 'Open Sans', sans-serif; */
     --font-serif: 'Merriweather', serif;
+    
     /* --font-serif: 'Roboto Slab', serif; */
     --font-mono: 'Fira Code', monospace;
     --font-size-base: 16px;
@@ -49,19 +52,32 @@
         @apply text-(--color-accent) dark:text-(--color-background);
         @apply shadow-md fixed w-full z-10 h-16;
     }
+
+    h1 {
+        @apply text-6xl;
+    }
     
     h1, h2, h3, h4, h5, h6 {
+        @apply font-serif;
         @apply font-bold;
         @apply mb-2;
+        /* @apply text-center; */
+        /* @apply pl-12; */
+    }
+
+    h1.yellow-heading {
+        @apply dark:text-yellow-500;
     }
     
     p {
         @apply mb-2 last:mb-0;
-        @apply font-serif;
+        @apply font-sans;
         @apply text-justify;
+        @apply: hyphens-auto;
     }
 
     .card {
+        /* border: 1px red dashed; */
         @apply p-4 m-4;
         @apply rounded-lg;
         @apply  from-gradient-start to-gradient-end
@@ -70,7 +86,8 @@
         /* @apply bg-(--color-background) border-(--color-border) rounded-(--color-border-radius) shadow-(--color-shadow);
         @apply dark:bg-(--color-background-dark) dark:shadow-(--color-shadow-dark); */
 
-        @apply bg-gradient-to-r;
+        @apply bg-gradient-to-br;
+        /* @apply mbg-gradient-to-r; */
         /* from-transparent to-black/7;
         @apply dark:bg-gradient-to-r dark:from-transparent dark:to-white/7; */
         
@@ -79,7 +96,7 @@
     }
 
     .card h1 {
-        @apply text-xl font-bold mb-4;
+        @apply text-2xl font-bold mb-4;
     }
 
     .carousel {

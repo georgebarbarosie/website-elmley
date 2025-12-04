@@ -2,14 +2,14 @@
     <div class="flex">
         <Carousel class="flex-1" v-bind="carouselConfig">
             <Slide>
-                <img src="~/assets/images/index-carousel-1-bungalow.png">
+                <NuxtImg src="/images/index-carousel-1-bungalow.png" />
             </Slide>
             <Slide>
-                <img src="~/assets/images/index-carousel-2-interior-light.png">
+                <NuxtImg src="/images/index-carousel-2-interior-light.png" />
             </Slide>
 
             <Slide>
-                <img src="~/assets/images/index-carousel-3-living.png">
+                <NuxtImg src="/images/index-carousel-3-living.png" />
             </Slide>
 
             <template #addons>
@@ -22,14 +22,14 @@
     <div class="m-10 flex-col flex backdrop-blur-xs -backdrop-hue-rotate-30 backdrop-contrast-40 bg-white/70 shadow-lg border-[#0000cc11] border-4 rounded-xl absolute top-12 left-0 z-2">
         <AppLogo class="h-56 m-8 fill-[#254741]" />
         <div class="flex flex-col m-4 mt-12 p-2 text-[#254741]">
-            <h1 class="text-6xl font-bold mb-4 font-[thryomanes] uppercase">Elmley Homes</h1>
+            <h1 class="text-6xl font-bold mb-4 font-[thryomanes] uppercase pl-0">Elmley Homes</h1>
             <p class="text-2xl font-bold mb-6">Built With Pride</p>
         </div>
     </div>
 
     <div class="card card-main">
         <h1>Your Trusted Partner in Land Development</h1>
-        <p class="hyphens-auto" lang="en">
+        <p>
             At Elmley Homes, our mission is to create exceptional, design-led homes that are both architecturally refined and sensitive to their surroundings. 
             We are dedicated to creating homes that meet the needs of contemporary living, and enrich the character of the communities to which they belong.
         </p>

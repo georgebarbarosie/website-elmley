@@ -22,14 +22,23 @@ export default defineNuxtConfig({
       title: 'Elmley Homes - website',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
       link: [
-        // use ~/assets/svg/logo.svg as favicon
-        { rel: 'icon', type: 'image/svg+xml', href: '/_nuxt/assets/svg/logo.svg' },
-        { rel: 'apple-touch-icon', href: '/_nuxt/assets/svg/logo.svg' }
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'apple-touch-icon', type: 'image/svg+xml', href: '/favicon.svg' }
       ],
     }
   },
 
-  modules: ['@vesp/nuxt-fontawesome', '@nuxtjs/color-mode', 'vue3-carousel-nuxt'],
+  modules: [
+    '@vesp/nuxt-fontawesome',
+    '@nuxtjs/color-mode',
+    'vue3-carousel-nuxt',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        'Nunito+Sans': true
+      }
+    }],
+    '@nuxt/image'
+  ],
   colorMode: {
     classSuffix: '',
   },
