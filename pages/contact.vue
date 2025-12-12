@@ -20,9 +20,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Phone:</td>
-                        <td><a href="tel:+44 7802895387">+44 7802 895387</a></td>
-                        <td><a href="tel:+44 7749106237">+44 7749 106237</a></td>
+                        <td class="pr-4 align-top">Phone:</td>
+                        <td>
+                            <a href="tel:+44 7802895387">+44 7802 895387</a> <br/>
+                            <a href="tel:+44 7749106237">+44 7749 106237</a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
