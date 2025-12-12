@@ -18,17 +18,9 @@ router.afterEach(() => {
 
 // we should initialize depending on the user's browser preference
 const colorMode = useColorMode();
-console.log('Current color mode:', colorMode.preference);
 
 // Listen for dark mode toggle event
 const toggleDarkMode = () => {
-
-  // Toggle the color mode between 'dark' and 'light'
-  if (colorMode.preference === 'dark') {
-    console.log('Switching to light mode');
-  } else {
-    console.log('Switching to dark mode');
-  }
   colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark';
 };
 
