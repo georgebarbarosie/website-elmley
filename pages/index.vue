@@ -53,7 +53,7 @@
 
         <p>
             Each site we acquire is chosen not just for its setting, but for the potential to create something
-            truly unique. Our designs are guided by a deep understanding of land, planning policy,
+            truly unique. Our designs are guided by a deep understanding of land, planning policy and
             local identity. We are always considerate of the surrounding environment, enhancing the local
             character through architecture that is both timeless and contemporary.
         </p>
