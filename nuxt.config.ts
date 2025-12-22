@@ -37,17 +37,25 @@ export default defineNuxtConfig({
         'Nunito+Sans': true
       }
     }],
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
   colorMode: {
     classSuffix: '',
+  },
+
+  site: {
+    name: 'Elmley Homes - Your Trusted Partner in Land Development',
+    url: 'https://www.elmleyhomes.co.uk',
   },
 
   ssr: true,
   nitro: {
     prerender: {
       crawlLinks: true,
-      failOnError: false
+      failOnError: false,
+      routes: ['/sitemap.xml', '/robots.txt']
     }
   }
 })
